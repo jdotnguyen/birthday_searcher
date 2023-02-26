@@ -1,0 +1,32 @@
+.birthday-results-body h1 {
+  margin: 0;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+.birthday-results-body {
+  height: calc(100vh - 250px);
+  min-height: 200px;
+}
+.birthday-results-body .loading {
+  display: flex;
+  padding: 32px;
+  align-items: center;
+  justify-content: center;
+}
+.birthday-results-body .list {
+  padding: 0;
+  max-height: calc(100vh - 380px);
+  min-height: 200px;
+  overflow: auto;
+  margin-bottom: 0;
+}
+.birthday-results-body .list li {
+  list-style: none;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+}
+.birthday-results-body .list li span,
+.birthday-results-body .list li b {
+  margin-left: 8px;
+}

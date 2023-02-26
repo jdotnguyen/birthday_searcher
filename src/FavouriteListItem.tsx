@@ -1,4 +1,5 @@
 import { Favourite } from './types/Favourite';
+import './FavouriteListItem.css';
 
 function FavouriteListItem({ date } : { date: Favourite }) {
   return (
@@ -8,7 +9,10 @@ function FavouriteListItem({ date } : { date: Favourite }) {
           <b>{date.date}</b>
           <ul>
             {date.people.map((person, index) => (
-              <li key={index}>{person.text}</li>
+              <li key={index} title={person.text}>
+                <b>{person.text.split(',')[0]}</b>
+                <span>{person.text.split(',')[1]}</span>
+              </li>
             ))}
           </ul>
         </li>

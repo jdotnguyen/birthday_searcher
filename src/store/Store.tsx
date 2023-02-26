@@ -1,7 +1,9 @@
 import { createContext, useReducer } from 'react';
 
 const initialState: any = {
-  favourites: []
+  favourites: [],
+  birthdays: [],
+  filteredBirthdays: []
 };
 const store = createContext(initialState);
 const { Provider } = store;
@@ -12,6 +14,14 @@ const StateProvider = ( { children }: { children: any } ) => {
       case 'saveFavourite':
         return {...state,
           favourites: action.data
+        };
+      case 'saveBirthdays':
+        return {...state,
+          birthdays: action.data
+        };
+      case 'saveFilteredBirthdays':
+        return {...state,
+          filteredBirthdays: action.data
         };
       default:
         throw new Error();

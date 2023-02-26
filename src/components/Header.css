@@ -1,0 +1,13 @@
+.app-header {
+  width: 100%;
+  padding: 20px;
+  background-color: rgb(0, 30, 60);
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+.app-header span {
+  margin-left: 16px;
+}

@@ -1,4 +1,11 @@
-.App {
+.content-area {
+  display: flex;
+  max-width: 1440px;
+  margin: auto;
+  padding-top: 32px;
+}
+
+.main {
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -7,47 +14,8 @@
 
 .App-header {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: flex-start;
-  padding-top: 40px;
-}
-
-.favourite-bday-body h1,
-.birthday-results-body h1 {
-  margin: 0;
-  font-size: 18px;
-  margin-bottom: 16px;
-}
-.favourite-bday-body {
-  flex: 1;
-  margin-left: 24px;
-}
-.birthday-results-body {
-  margin-top: 24px;
-}
-.birthday-results-body .loading {
-  display: flex;
-  padding: 32px;
-  align-items: center;
-  justify-content: center;
-}
-.birthday-results-body .list,
-.favourite-bday-body .list {
-  padding: 0;
-}
-.birthday-results-body .list li {
-  list-style: none;
-  padding: 5px 0;
-  display: flex;
-  align-items: center;
-}
-.birthday-results-body .list li span {
-  margin-left: 8px;
-}
-.favourite-bday-body .list {
-  padding: 0;
-}
-.favourite-bday-body .list li {
-  list-style: none;
-  padding: 5px 0;
+  padding-top: 8px;
+  margin-bottom: 24px;
 }
