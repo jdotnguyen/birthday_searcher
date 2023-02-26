@@ -1,20 +1,19 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import BirthdayListItem from './BirthdayListItem';
-import { Person } from './types/Person';
 import { demoPersonFavourite, demoPersonNotFavourite } from './tests/sampleData';
 
 test('Renders birthday list item with person text property', () => {
   const toggleFn = () => {};
   render(<BirthdayListItem person={demoPersonNotFavourite} toggleFavouriteFn={toggleFn} />);
-  const personText = screen.getByText(/Rocky, South Korean singer, dancer and songwriter 1/i);
+  const personText = screen.getByText(/Rocky 1/i);
   expect(personText).toBeInTheDocument();
 });
 
 test('Renders birthday list item with person text property', () => {
   const toggleFn = () => {};
   render(<BirthdayListItem person={demoPersonFavourite} toggleFavouriteFn={toggleFn} />);
-  const personText = screen.getByText(/Rocky, South Korean singer, dancer and songwriter 2/i);
+  const personText = screen.getByText(/Rocky 2/i);
   expect(personText).toBeInTheDocument();
 });
 

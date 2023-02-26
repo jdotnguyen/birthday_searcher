@@ -1,4 +1,4 @@
-import { Card, CardContent, Typography } from '@mui/material';
+import { Card, CardContent } from '@mui/material';
 import { Favourite } from '../types/Favourite';
 import FavouriteListItem from '../FavouriteListItem';
 

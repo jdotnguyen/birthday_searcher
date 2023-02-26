@@ -2,7 +2,7 @@ import { Favourite } from "../types/Favourite";
 import { Person } from "../types/Person";
 
 export const demoPersonNotFavourite: Person = {
-  "text": "Rocky, South Korean singer, dancer and songwriter 1",
+  "text": "Rocky 1, South Korean singer, dancer and songwriter 1",
   "pages": [
       {
           "type": "standard",
@@ -100,7 +100,7 @@ export const demoPersonNotFavourite: Person = {
 };
 
 export const demoPersonFavourite: Person = {
-  "text": "Rocky, South Korean singer, dancer and songwriter 2",
+  "text": "Rocky 2, South Korean singer, dancer and songwriter 2",
   "pages": [
       {
           "type": "standard",
