@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import BirthdayListItem from './BirthdayListItem';
-import { demoPersonFavourite, demoPersonNotFavourite } from './tests/sampleData';
+import { demoPersonFavourite, demoPersonNotFavourite } from '../tests/sampleData';
 
 test('Renders birthday list item with person text property', () => {
   const toggleFn = () => {};

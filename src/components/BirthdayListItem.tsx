@@ -1,6 +1,6 @@
 import { IconButton } from '@mui/material';
 import { Star } from '@mui/icons-material';
-import { Person } from './types/Person';
+import { Person } from '../types/Person';
 import './BirthdayListItem.css';
 
 function BirthdayListItem({ person, toggleFavouriteFn } : { person: Person, toggleFavouriteFn: any }) {

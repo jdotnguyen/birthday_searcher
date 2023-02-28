@@ -3,7 +3,7 @@ import { TextField, CircularProgress,Card, CardContent } from '@mui/material';
 import { store } from '../store/Store';
 import { Person } from '../types/Person';
 import { Favourite } from '../types/Favourite';
-import BirthdayListItem from '../BirthdayListItem';
+import BirthdayListItem from './BirthdayListItem';
 
 function BirthdaySection({ date, loading }: { date: string, loading: boolean }) {
   const globalState = useContext(store);

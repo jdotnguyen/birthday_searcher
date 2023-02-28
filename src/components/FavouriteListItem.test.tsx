@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import FavouriteListItem from './FavouriteListItem';
-import { demoFavouriteDate } from './tests/sampleData';
+import { demoFavouriteDate } from '../tests/sampleData';
 
 test('Renders a birthday header with 2 people under thate date', () => {
   const toggleFn = () => {};

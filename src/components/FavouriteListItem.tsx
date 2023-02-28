@@ -1,4 +1,4 @@
-import { Favourite } from './types/Favourite';
+import { Favourite } from '../types/Favourite';
 import './FavouriteListItem.css';
 
 function FavouriteListItem({ date } : { date: Favourite }) {

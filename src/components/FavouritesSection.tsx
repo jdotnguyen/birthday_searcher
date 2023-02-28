@@ -1,6 +1,6 @@
 import { Card, CardContent } from '@mui/material';
 import { Favourite } from '../types/Favourite';
-import FavouriteListItem from '../FavouriteListItem';
+import FavouriteListItem from './FavouriteListItem';
 
 function FavouritesSection({ favourites }: {favourites: Favourite[]}) {
   return (
